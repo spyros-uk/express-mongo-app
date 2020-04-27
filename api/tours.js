@@ -1,10 +1,13 @@
 import tours from "../dev-data/data/tours-simple"
+import express from "express"
 
-export { registerToursRoutes }
+export { useToursRouter }
 
-function registerToursRoutes(app) {
-  app.route("/api/v1/tours").get(getTours).post(createTour)
-  app.route("/api/v1/tours/:id").get(getTourById)
+function useToursRouter(app) {
+  const router = express.Router()
+  app.use("/api/v1/tours", router)
+  router.route("/").get(getTours).post(createTour)
+  router.route("/:id").get(getTourById)
 }
 
 function getTours(req, res) {

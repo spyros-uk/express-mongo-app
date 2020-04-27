@@ -1,6 +1,6 @@
 import express from "express"
 import morgan from "morgan"
-import { registerToursRoutes } from "./api/tours"
+import { useToursRouter, useUsersRouter } from "./api"
 
 const PORT = 3000
 const app = express()
@@ -8,8 +8,8 @@ const app = express()
 app.use(express.json())
 app.use(morgan("dev"))
 
-registerToursRoutes(app)
-
+useToursRouter(app)
+useUsersRouter(app)
 
 app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`)
