@@ -1,4 +1,4 @@
-import users from "../dev-data/data/users"
+import users from "../../dev-data/data/users"
 import express from "express"
 
 export { useUsersRouter }

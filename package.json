@@ -39,11 +39,12 @@
   },
   "nodemonConfig": {
     "watch": [
-      "app.js",
+      "server.js",
+      "app",
       "api",
       "public",
       "node_modules"
     ],
-    "exec": "babel-node app.js"
+    "exec": "babel-node server.js"
   }
 }

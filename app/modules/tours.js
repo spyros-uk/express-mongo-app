@@ -1,4 +1,4 @@
-import tours from "../dev-data/data/tours-simple"
+import tours from "../../dev-data/data/tours-simple"
 import express from "express"
 
 export { useToursRouter }
