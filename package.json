@@ -1,0 +1,25 @@
+{
+  "name": "express-mongo-app",
+  "version": "1.0.0",
+  "description": "An app to familiarise myself with Express and MongoDB",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spyros-uk/express-mongo-app.git"
+  },
+  "keywords": [
+    "express",
+    "mongo",
+    "ssr",
+    "pug"
+  ],
+  "author": "Spyros Papaioannou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spyros-uk/express-mongo-app/issues"
+  },
+  "homepage": "https://github.com/spyros-uk/express-mongo-app#readme",
+  "scripts": {
+    "test": "test"
+  }
+}
