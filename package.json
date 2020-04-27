@@ -28,7 +28,8 @@
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -36,6 +37,7 @@
   },
   "nodemonConfig": {
     "watch": [
+      "app.js",
       "public",
       "node_modules"
     ],
